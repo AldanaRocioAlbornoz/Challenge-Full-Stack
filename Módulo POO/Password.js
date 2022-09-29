@@ -26,6 +26,10 @@ class Password {
         this.#longitud = long;
     }
 
+    set contraseña(contra) {
+        this.#contraseña = contra;
+    }
+
     esFuerte() {
         const str = this.#contraseña;
 
@@ -39,11 +43,23 @@ class Password {
     }
 
     generarPassword() {
-
+        const chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let newPass = "";
+        let randomNumber;
+        for (let i = 0; i <= this.#longitud; i++) {
+            randomNumber = Math.floor(Math.random() * chars.length);
+            newPass += chars.substring(randomNumber, randomNumber +1);
+        }
+        return newPass;
     }
 
 
 }
 
-const pass = new Password("123asdAA");
+const pass = new Password();
+
+pass.longitud = 16;
+pass.contraseña = pass.generarPassword();
+
+console.log(pass.contraseña);
 console.log(pass.esFuerte());
