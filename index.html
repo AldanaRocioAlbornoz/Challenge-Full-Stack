@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Challenge</title>
+        <script src="./Módulo Algoritmos/Ejercicio 1.js"></script>
+        <script src="./Módulo Algoritmos/Ejercicio 2.js"></script>
+        <script src="./Módulo Algoritmos/Ejercicio 3.js"></script>
+        <script src="./Módulo Algoritmos/Ejercicio 4.js"></script>
+        <script src="./Módulo Algoritmos/Ejercicio 5.js"></script>
+        <script src="./Módulo Estructura Datos/Ejercicio 1.js"></script>
+        <script src="./Módulo Estructura Datos/Ejercicio 2.js"></script>
+        <script src="./Módulo Estructura Datos/Ejercicio 3.js"></script>
+        <script src="./Módulo POO/Password.js"></script>
+        
+    </head>
+    <body>
+        <div id="modulo-algoritmos">
+            <h2><u>Módulo Algoritmos</u></h2>
+            <div id="ejercicio1">
+            <h3>Ejercicio 1</h3>
+            <p>
+                Pide un número por teclado e indica si es un número primo o no.
+            </p>
+            <input type="number" id="num1" placeholder="Ingrese un numero">
+            <button onclick="displayResultPrime();">Enviar</button>
+        </div>
+        <hr>
+        <div id="ejercicio2">
+            <h3>Ejercicio 2</h3>
+            <p>
+                Escribe una aplicación que solicite al usuario que ingrese una contraseña cualquiera.
+                Después se le pedirá que ingrese nuevamente la contraseña, con 3 intentos.
+            </p>
+            <input type="password" id="pass" placeholder="Ingrese una contraseña">
+            <button onclick="displayResultPassword();">Enviar</button>
+            <p id="logs"></p>
+        </div>
+        <hr>
+        <div id="ejercicio3">
+            <h3>Ejercicio 3</h3>
+            <p>
+                Ingresar los datos solicitados de un empleado para saber cuanto debe cobrar.
+            </p>
+            <table>
+                <tr>
+                    <th>Valor x Hora</th>
+                    <th>Nombre</th>
+                    <th>Antigüedad</th>
+                    <th>Horas trabajadas</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="hourlyRate">
+                    </td>
+                    <td>
+                        <input type="text" id="name">
+                    </td>
+                    <td>
+                        <input type="number" id="years">
+                    </td>
+                    <td>
+                        <input type="number" id="hours">
+                    </td>
+                    <td>
+                        <button onclick="displayWage();">Enviar</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div id="ejercicio4">
+            <h3>Ejercicio 4</h3>
+            <p>
+                Adivina el numero entre 0 y 1000.
+            </p>
+            <input type="number" id="guess" placeholder="Ingrese un numero">
+            <button onclick="displayGuess();">Enviar</button>
+            <p id="display-guess"></p>
+        </div>
+        <hr>
+        <div id="ejercicio5">
+            <h3>Ejercicio 5</h3>
+            <p>
+                Ingresa los números que quieras. Al ingresar (-1) se muestran los resultados
+            </p>
+            <button onclick="addToArray()">Ingresar números</button>
+            <p id="logs2"></p>
+        </div>
+        <hr>
+        </div>
+        <div>
+            <h2><u>Módulo Estructura de Datos</u></h2>
+            <div id="ejercicio1-ed">
+                <h3>Ejercicio 1</h3>
+                <p>
+                    Tienes esta lista de números: [1, 2, 3, 4, 5, 3, 6, 3, 7] <br>
+                    Envia un numero a borrar.
+                </p>
+                <input type="number" id="num3" placeholder="Ingrese un numero">
+                <button onclick="displayLists();">Enviar</button>
+                <p id="logs-list"></p>
+            </div>
+            <hr>
+            <div id="ejercicio2-ed">
+                <h3>Ejercicio 2</h3>
+                <p>
+                    Tienes esta pila de números: [1, 5, 3, 2, 9, 2] <br>
+                    Ingresar que numero deseas reemplazar y por cuál.
+                </p>
+                <button onclick="startReplace();">Reemplazar</button>
+                <p id="logs-stack"></p>
+            </div>
+            <hr>
+            <div id="ejercicio3-ed">
+                <h3>Ejercicio 3</h3>
+                <p>
+                    Tienes esta lista de números: [7, 2, 8, 3, 5, 6] <br>
+                    Sumar los elementos de la lista recursivamente
+                </p>
+                <button onclick="sum();">Enviar</button>
+                <p id="logs-sum"></p>
+            </div>
+            <hr>
+        </div>
+    </body>
+</html>
